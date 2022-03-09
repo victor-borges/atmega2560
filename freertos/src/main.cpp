@@ -6,7 +6,7 @@ void blink_led(void *parameters);
 void setup() {
     pinMode(LED_BUILTIN, OUTPUT);
 
-    xTaskCreate(blink_led, "Blink", 128, NULL, 2, NULL);
+    xTaskCreate(blink_led, "Blink", 128, nullptr, 2, nullptr);
 }
 
 void loop() {
