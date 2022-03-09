@@ -1,0 +1,6 @@
+#ifndef PIEZO_BUZZER_ATMEGA2560_HEADER_H
+#define PIEZO_BUZZER_ATMEGA2560_HEADER_H
+
+void play_melody(void *parameters);
+
+#endif //PIEZO_BUZZER_ATMEGA2560_HEADER_H
