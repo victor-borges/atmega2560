@@ -7,7 +7,7 @@
 
 void setup() {
     pinMode(PIEZO_BUZZER, OUTPUT);
-    xTaskCreate(play_melody, "play_melody", 128, NULL, 2, NULL);
+    xTaskCreate(play_melody, "play_melody", 128, nullptr, 2, nullptr);
 }
 
 void loop() {
@@ -37,4 +37,6 @@ void play_melody(void *parameters) {
         // stop the tone playing:
         noTone(PIEZO_BUZZER);
     }
+
+    delay(1000);
 }
